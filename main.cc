@@ -245,6 +245,7 @@ void start_recorder(Call *call) {
     call->set_recording(false); // start with the assumption that there are no recorders available.
     call->set_debug_recording(false);
 
+    BOOST_LOG_TRIVIAL(error) << "\tstart_recorder called for: " << call->get_talkgroup() << "\tTDMA: " << call->get_tdma() <<  "\tEncrypted: " << call->get_encrypted();
     if (call->get_encrypted() == false) {
         BOOST_LOG_TRIVIAL(error) << "\tCall created for: " << call->get_talkgroup() << "\tTDMA: " << call->get_tdma() <<  "\tEncrypted: " << call->get_encrypted();
 
@@ -252,6 +253,7 @@ void start_recorder(Call *call) {
             Source * source = *it;
 
             if ((source->get_min_hz() <= call->get_freq()) && (source->get_max_hz() >= call->get_freq())) {
+		BOOST_LOG_TRIVIAL(info) << "\t Source found for " << call->get_freq();
                 source_found = true;
 
                  if (call->get_tdma()) {
@@ -261,6 +263,7 @@ void start_recorder(Call *call) {
                 if (talkgroup)
                 {
                     if (talkgroup->mode == 'A') {
+			BOOST_LOG_TRIVIAL(info) << "\tSetting up analog recorder for " << call->get_talkgroup() << ", priority " << talkgroup->get_priority();
                         recorder = source->get_analog_recorder(talkgroup->get_priority());
                     } else {
                         recorder = source->get_digital_recorder(talkgroup->get_priority());
@@ -270,14 +273,14 @@ void start_recorder(Call *call) {
 
                     recorder = source->get_digital_recorder(2);
                 }
-                
+
                 int total_recorders = get_total_recorders();
                 if (recorder) {
                     recorder->activate(call, total_recorders);
                     call->set_recorder(recorder);
                     call->set_recording(true);
                 } else {
-                    //BOOST_LOG_TRIVIAL(error) << "\tNot recording call";
+                    BOOST_LOG_TRIVIAL(error) << "\tNot recording call";
                 }
 
                 debug_recorder = source->get_debug_recorder();
@@ -286,7 +289,7 @@ void start_recorder(Call *call) {
                     call->set_debug_recorder(debug_recorder);
                     call->set_debug_recording(true);
                 } else {
-                    //BOOST_LOG_TRIVIAL(info) << "\tNot debug recording call";
+                    BOOST_LOG_TRIVIAL(info) << "\tNot debug recording call";
                 }
 
             }
@@ -360,7 +363,8 @@ void assign_recorder(TrunkMessage message) {
 
         // Does the call have the same talkgroup
         if (call->get_talkgroup() == message.talkgroup) {
-            BOOST_LOG_TRIVIAL(info) << "\t Call matches talkgroup";
+            BOOST_LOG_TRIVIAL(info) << "\t assign_recorder - Call matches talkgroup";
+
 
             
             // Is the freq the same?
@@ -368,7 +372,8 @@ void assign_recorder(TrunkMessage message) {
                 BOOST_LOG_TRIVIAL(trace) << "\tRetune - Total calls: " << calls.size() << "\tTalkgroup: " << message.talkgroup << "\tOld Freq: " << call->get_freq() << "\tNew Freq: " << message.freq;
                 // are we currently recording the call?
                 if (call->get_recording() == true) {
-                    
+		    BOOST_LOG_TRIVIAL(info) << "\t assign_recorder - we think we're already recording";
+
                     retune_recorder(message, call);
                     call->update(message);
                     call_found = true;
