@@ -52,10 +52,10 @@ analog_recorder::analog_recorder(Source *src)
 	//on a trunked network where you know you will have good signal, a carrier power squelch works well. real FM receviers use a noise squelch, where
 	//the received audio is high-passed above the cutoff and then fed to a reverse squelch. If the power is then BELOW a threshold, open the squelch.
 
-	/*squelch = gr::analog::pwr_squelch_cc::make(28, 		//squelch point
-										   		0.1, 	//alpha
-										  		10, 		//ramp
-										   		true); 	//gated so that the audio recording doesn't contain blank spaces between transmissions
+	squelch = gr::analog::pwr_squelch_cc::make(28, 		//squelch point
+        				   	   0.1, 	//alpha
+						   10, 		//ramp
+						   true); 	//gated so that the audio recording doesn't contain blank spaces between transmissions
 */
 
 
@@ -109,7 +109,7 @@ analog_recorder::analog_recorder(Source *src)
 	connect(prefilter, 0, downsample_sig, 0);
 	connect(downsample_sig, 0, demod, 0);
 	//connect(downsample_sig, 0, squelch, 0);
-	//connect(squelch, 0,	demod, 0);
+	connect(squelch, 0,	demod, 0);
 	connect(demod, 0, deemph, 0);
 	connect(deemph, 0, decim_audio, 0);
 	connect(decim_audio, 0, wav_sink, 0);
