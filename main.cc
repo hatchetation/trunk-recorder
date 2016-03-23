@@ -246,7 +246,7 @@ void start_recorder(Call *call) {
     call->set_debug_recording(false);
 
     if (call->get_encrypted() == false) {
-        //BOOST_LOG_TRIVIAL(error) << "\tCall created for: " << call->get_talkgroup() << "\tTDMA: " << call->get_tdma() <<  "\tEncrypted: " << call->get_encrypted();
+        BOOST_LOG_TRIVIAL(error) << "\tCall created for: " << call->get_talkgroup() << "\tTDMA: " << call->get_tdma() <<  "\tEncrypted: " << call->get_encrypted();
 
         for(vector<Source *>::iterator it = sources.begin(); it != sources.end(); it++) {
             Source * source = *it;
@@ -360,6 +360,8 @@ void assign_recorder(TrunkMessage message) {
 
         // Does the call have the same talkgroup
         if (call->get_talkgroup() == message.talkgroup) {
+            BOOST_LOG_TRIVIAL(info) << "\t Call matches talkgroup";
+
             
             // Is the freq the same?
             if (call->get_freq() != message.freq) {
@@ -414,6 +416,7 @@ void assign_recorder(TrunkMessage message) {
     if (!call_found) {
         Call * call = new Call(message);
         start_recorder(call);
+        BOOST_LOG_TRIVIAL(info) << "\tStarting recording -  TG: " << message.talkgroup << "\tFreq: " << message.freq ;
         calls.push_back(call);
     }
 }
@@ -515,9 +518,11 @@ void handle_message(std::vector<TrunkMessage>  messages) {
 
         switch(message.message_type) {
             case GRANT:
+      	        BOOST_LOG_TRIVIAL(info) << "\t Calling assign_recorder(GRANT) " ;
                 assign_recorder(message);
                 break;
             case UPDATE:
+      	        BOOST_LOG_TRIVIAL(info) << "\t Calling update_recorder(UPDATE) " ;
                 update_recorder(message);
                 break;
             case CONTROL_CHANNEL:
@@ -567,6 +572,7 @@ void monitor_messages() {
         }
 
         if (system_type == "smartnet") {
+            BOOST_LOG_TRIVIAL(error) << "\t Received Smartnet Message: " << msg->to_string();
             trunk_messages = smartnet_parser->parse_message(msg->to_string());
         } else if (system_type == "p25") {
             trunk_messages = p25_parser->parse_message(msg);

@@ -1,5 +1,6 @@
 
 #include "analog_recorder.h"
+#include <boost/log/trivial.hpp>
 using namespace std;
 
 bool analog_recorder::logging = false;
@@ -175,6 +176,7 @@ void analog_recorder::activate(Call *call, int n) {
     num = n;
 
 	prefilter->set_center_freq( freq - center); // have to flip for 3.7
+	BOOST_LOG_TRIVIAL(error) << "analog_record: Tunning to " << freq - center;
 
 	wav_sink->open(call->get_filename());
 
