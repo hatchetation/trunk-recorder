@@ -28,7 +28,7 @@
 #include <gnuradio/analog/quadrature_demod_cf.h>
 #include <gnuradio/analog/sig_source_f.h>
 #include <gnuradio/analog/sig_source_c.h>
-//#include <gnuradio/analog/pwr_squelch_cc.h>
+#include <gnuradio/analog/pwr_squelch_cc.h>
 #include <gnuradio/blocks/multiply_cc.h>
 #include <gnuradio/blocks/file_sink.h>
 #include <gnuradio/filter/rational_resampler_base_ccf.h>
@@ -112,7 +112,7 @@ private:
 	gr::filter::rational_resampler_base_ccf::sptr downsample_sig;
 	gr::filter::fir_filter_fff::sptr decim_audio;
 	gr::filter::rational_resampler_base_fff::sptr upsample_audio;
-	//gr::analog::pwr_squelch_cc::sptr squelch;
+	gr::analog::pwr_squelch_cc::sptr squelch;
 	gr::analog::quadrature_demod_cf::sptr demod;
 	gr::blocks::wavfile_sink::sptr wav_sink;
 	gr::blocks::file_sink::sptr raw_sink;
