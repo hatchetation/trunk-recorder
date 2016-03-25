@@ -19,6 +19,7 @@
 #include <gnuradio/hier_block2.h>
 #include <gnuradio/blocks/multiply_const_ff.h>
 #include <gnuradio/filter/firdes.h>
+#include <gnuradio/fft/window.h>
 #include <gnuradio/filter/iir_filter_ffd.h>
 #include <gnuradio/filter/fir_filter_ccf.h>
 #include <gnuradio/filter/fir_filter_fff.h>

@@ -113,8 +113,8 @@ analog_recorder::analog_recorder(Source *src)
 	highpass_resampler_taps = gr::filter::firdes::high_pass(1,
 						 samp_rate,
 						 300,	//cutoff
-						 50);	//transition
-						 // hann -gr-smartnet uses
+						 50,	//transition
+						 WIN_HANN);
 
 	//highpass = gr::filter::
 	highpass = gr::filter::fir_filter_fff::make(1, highpass_resampler_taps);
