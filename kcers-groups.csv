@@ -1,0 +1,524 @@
+1616,65,A,SFD ATG,Announcement Talkgroup,Fire-Talk,Seattle Fire,2
+1648,67,A,SFD Ch 1,Ch 1 Primary Fire Response,Fire-Tac,Seattle Fire,2
+1680,69,A,SFD Ch 2,Ch 2 Secondary Fire Response,Fire-Tac,Seattle Fire,2
+1712,06b,A,SFD Ch 3,Ch 3 Tertiary Fire Response,Fire-Tac,Seattle Fire,2
+1744,06d,A,SFD Disp,Ch 4 Dispatch Fire,Fire Dispatch,Seattle Fire,2
+1776,06f,A,SFD Disp 2,Ch 5 Direct Dispatch Channel,EMS-Tac,Seattle Fire,2
+1808,71,A,SFD EMS 6,Ch 6 EMS Primary Response,EMS-Tac,Seattle Fire,2
+1840,73,A,SFD Cmnd 11,Ch 11 Fire Command Support,Fire-Talk,Seattle Fire,2
+1872,75,A,SFD Cmnd 12,Ch 12 Fire Command Support,Fire-Tac,Seattle Fire,2
+1904,77,A,SFD MyDy Tac,Fire Mayday Tactical,Fire-Tac,Seattle Fire,2
+1936,79,A,SFD RIT,Fire Rapid Intervention Team,Fire-Tac,Seattle Fire,2
+1968,07b,A,SFD AMB,Fire Ambulance Requests,EMS-Tac,Seattle Fire,2
+2000,07d,A,SFD Med1 Doc,Medic One Doctor,EMS-Tac,Seattle Fire,1
+2032,07f,A,SFD Trma Doc,Trauma Doctor,EMS-Tac,Seattle Fire,2
+2064,81,A,SFD Cmnd13,13 Command Support,Deprecated,Seattle Fire,2
+2096,83,A,SFD M/P,Fire Multipurpose,Fire-Tac,Seattle Fire,2
+2128,85,A,SFD Emerg,Fire Emergency,Fire-Tac,Seattle Fire,2
+2160,87,A,SFD Invest,Investigations,Deprecated,Seattle Fire,2
+2192,89,A,SFD FAC,Fire Alarm Center Administration,Fire-Talk,Seattle Fire,2
+2224,08b,A,SFD AIR,Airlift Northwest,EMS-Tac,Seattle Fire,2
+2256,08d,A,SFD RMC/EOC,EOC / Fire Coordination,Emergency Ops,Seattle Fire,2
+2288,08f,A,SFD Bat 2,Battalion 2,Fire-Talk,Seattle Fire,2
+2320,91,A,SFD Bat 3,Battalion 3,Fire-Talk,Seattle Fire,2
+2352,93,A,SFD Bat 4,Battalion 4,Fire-Talk,Seattle Fire,2
+2384,95,A,SFD Bat 5,Battalion 5,Fire-Talk,Seattle Fire,2
+2416,97,A,SFD Bat 6,Battalion 6,Fire-Talk,Seattle Fire,2
+2448,99,A,SFD Bat 7,Battalion 7,Fire-Talk,Seattle Fire,2
+2480,09b,A,SFD Ops,Operations,Fire-Tac,Seattle Fire,2
+2512,09d,A,SFD Cmd 13,Ch 13 Command Support,Fire-Talk,Seattle Fire,2
+2992,0bb,A,SFD Trn 1,Training 1,Fire-Talk,Seattle Fire,2
+3024,0bd,A,SFD FMO,Fire Marshall Office,Fire-Talk,Seattle Fire,2
+3056,0bf,A,SFD Serv,Fire Services,Fire-Talk,Seattle Fire,2
+3088,0c1,A,SFD Event 14,Event 14,Fire-Talk,Seattle Fire,2
+3120,0c3,A,SFD Event 15,Event 15,Fire-Talk,Seattle Fire,2
+3184,0c7,A,SFD EOC,Emergency Operations Center,Deprecated,Seattle Fire,2
+3216,0c9,A,SPD ATG,Announcement Talk Group,Law Talk,Seattle Police,2
+3248,0cb,A,SPD W,Dispatch West,Law Dispatch,Seattle Police,2
+3280,0cd,A,SPD N,Dispatch North,Law Dispatch,Seattle Police,2
+3312,0cf,A,SPD S,Dispatch South,Law Dispatch,Seattle Police,2
+3344,0d1,A,SPD E,Dispatch East,Law Dispatch,Seattle Police,2
+3408,0d5,A,SPD Data,Data,Law Talk,Seattle Police,2
+3440,0d7,A,SPD Tac 1,Tactical 1,Law Tac,Seattle Police,1
+3472,0d9,A,SPD Tac 2,Tactical 2,Law Tac,Seattle Police,1
+3504,0db,A,SPD Tac 3,Tactical 3,Law Tac,Seattle Police,1
+3536,0dd,A,SPD Tac 4,Tactical 4,Law Tac,Seattle Police,1
+3568,0df,A,SPD Event 1,Event 1,Law Talk,Seattle Police,1
+3600,0.00E+00,A,SPD Emerg,Emergency Button Talk Group,Law Tac,Seattle Police,1
+3632,0.00E+00,A,SPD Tac E,Tactical East,Law Tac,Seattle Police,1
+3664,0.00E+00,A,SPD Tac S,Tactical South,Law Tac,Seattle Police,1
+3696,0.00E+00,A,SPD Tac N,Tactical North,Law Tac,Seattle Police,1
+3728,0.00E+00,A,SPD Tac W,Tactical West,Law Tac,Seattle Police,1
+3760,0eb,A,SPD INV TAC1,Investigative Tactical 1,Law Tac,Seattle Police,1
+3792,0ed,A,SPD INV TAC2,Investigative Tactical 2,Law Tac,Seattle Police,1
+3824,0ef,A,SPD CTR 1,Center 1,Law Talk,Seattle Police,1
+3856,0f1,A,SPD CRT 2,Center 2,Law Talk,Seattle Police,2
+3888,0f3,A,SPD Cmnd 1,Command 1,Law Talk,Seattle Police,2
+3920,0f5,A,SPD Cmnd 2,Command 2,Law Talk,Seattle Police,2
+3952,0f7,A,SPD Cmnd 3,Command 3,Law Talk,Seattle Police,2
+3984,0f9,A,SPD Cmnd 4,Command 4,Law Talk,Seattle Police,2
+4016,0fb,A,SPD Cmnd 5,Command 5,Law Talk,Seattle Police,2
+4048,0fd,A,SPD Harbor,Harbor Patrol,Law Tac,Seattle Police,1
+4080,0ff,A,SPD ITS,Information Technology Support,Law Tac,Seattle Police,2
+4112,101,A,SPD Narc 2,Narcotics 2,Law Tac,Seattle Police,2
+4144,103,A,SPD Narc 3,Narcotics 3,Law Tac,Seattle Police,2
+4176,105,A,SPD NTF,Narcotics Task Force,Law Talk,Seattle Police,1
+4208,107,A,SPD VICE 1,Vice 1,Law Talk,Seattle Police,2
+4240,109,A,SPD VICE 2,Vice 2,Law Talk,Seattle Police,2
+4272,10b,A,SPD CIS 1,Criminal Investigation Services 1,Law Talk,Seattle Police,2
+4304,10d,A,SPD CIS 2,Criminal Investigation Services 2,Law Talk,Seattle Police,2
+4336,10f,A,SPD EM RESP1,Emergency Response Team 1,Law Talk,Seattle Police,2
+4368,111,A,SPD EM RESP2,Emergency Response Team 2,Law Talk,Seattle Police,2
+4400,113,E,SPD HOS N1,Hostage Negotiator 1,Law Talk,Seattle Police,2
+4432,115,E,SPD HOS N2,Hostage Negotiator 2,Law Talk,Seattle Police,2
+4464,117,A,SPD INTERNAL,Internal Investigation,Law Talk,Seattle Police,2
+4496,119,A,SPD Trng 1,Training 1,Law Tac,Seattle Police,2
+4528,11b,A,SPD Trng 2,Training 2,Law Tac,Seattle Police,2
+4560,11d,A,SPD Trng 3,Training 3,Law Tac,Seattle Police,2
+4592,11f,A,SPD Trng 4,Training 4,Law Tac,Seattle Police,2
+4624,121,A,SPD Trng 5,Training 5,Law Tac,Seattle Police,2
+4656,123,A,SPD Trng 6,Training 6,Law Tac,Seattle Police,2
+4784,12b,A,SPD Cmnd 6,Command 6,Law Talk,Seattle Police,2
+4848,12f,A,SEA CEN 1,Center 1,Business,Seattle Center,2
+4880,131,A,SEA CEN 2,Center 2,Business,Seattle Center,2
+4912,133,A,SEA CEN 3,Center 3,Business,Seattle Center,2
+4944,135,A,SEA CEN 4,Center 4,Business,Seattle Center,2
+4976,137,A,SEA CEN 5,Center 5,Business,Seattle Center,2
+5008,139,A,SEA CEN 6,Center 6,Business,Seattle Center,2
+5168,143,A,KC EsdDasT,DAS Telecom Services,Emergency Ops,Seattle Public Works,2
+5200,145,A,KC EsdDasM,ESD DAS Facility Maintenance,Emergency Ops,Seattle Public Works,2
+5488,157,A,SeattlePrks1,Parks 1,Public Works,Seattle Public Works,2
+5520,159,A,WoodPaZoo,Woodland Park Zoo,Public Works,Seattle Public Works,2
+5552,15b,A,KC Anml Ctl,Animal Control,Public Works,Seattle Public Works,2
+5584,15d,A,StlCrtSecrty,Municipal Court Security,Security,Seattle Public Works,2
+5648,161,A,ESD treasure,ESD treasurer,Public Works,Seattle Public Works,2
+5776,169,A,SeattlePrks2,Parks 2,Public Works,Seattle Public Works,2
+5808,16b,A,Sea ParksRec,Recreation,Public Works,Seattle Public Works,2
+5968,175,A,KC EOC OEM1,Office of Emergency Management 1,Emergency Ops,Seattle Public Works,2
+6032,179,A,KC EOC Ops,Operations - 1,Emergency Ops,Seattle Public Works,2
+6064,17b,A,KC EOC Ops 1,Emergency Operations,Emergency Ops,Seattle Public Works,2
+6224,185,A,KC ESD Centr,ESD Operations Center,Emergency Ops,Seattle Public Works,2
+6288,189,A,SDAS Fleet,SDAS fleet svcs,Public Works,Seattle Public Works,2
+6448,193,A,Sea WtrShd1,Watershed,Public Works,Seattle Public Works,2
+6480,195,A,Sea W&S,Water & Sewer,Public Works,Seattle Public Works,2
+6512,197,A,Sea WtrShd2,Watershed 2,Public Works,Seattle Public Works,2
+6544,199,A,Sea Wtr 4,Water 4,Public Works,Seattle Public Works,2
+6576,19b,A,Sea Wtr 5,Water 5,Public Works,Seattle Public Works,2
+6608,19d,A,Sea Wtr 6,Water 6,Public Works,Seattle Public Works,2
+6640,19f,A,SPU Wtr 7,Water 7,Public Works,Seattle Public Works,2
+6768,1a7,A,Sea Evnt1,Event 1,Multi-Tac,Seattle Public Works,2
+6800,1a9,A,Sea Evnt2,Event 2,Multi-Tac,Seattle Public Works,2
+6864,1ad,A,Sea Evnt4,Event 4,Multi-Tac,Seattle Public Works,2
+7088,1bb,A,SeaEngDrains,Engineering - Drains,Public Works,Seattle Public Works,2
+7120,1bd,A,SEATRAN Main,Seatran ST Maintenance,Public Works,Seattle Public Works,2
+7152,1bf,A,SEATRAN Brdg,SEATRAN Bridges,Public Works,Seattle Public Works,2
+7184,1c1,A,SeaEngSan,Engineering - Sanitation,Public Works,Seattle Public Works,2
+7216,1c3,A,SEATRAN,SEATRAN Traffic,Public Works,Seattle Public Works,2
+7632,1dd,A,SPU Eng,SPU Engineering,Public Works,Seattle Public Works,2
+7760,1.00E+05,A,KC EOC to HR,Link to Human Services,Emergency Ops,Seattle Public Works,2
+8720,221,A,Sea Schl NW,Schools NW,Schools,Seattle Public Schools,2
+8752,223,A,Sea Schl Sec,Schools Security,Security,Seattle Public Schools,2
+8784,225,A,Sea Schl N,Schools N,Schools,Seattle Public Schools,2
+8816,227,A,Sea Schl S,Schools S,Schools,Seattle Public Schools,2
+8848,229,A,Sea Schl SW,Schools SW,Schools,Seattle Public Schools,2
+8944,22f,A,KC EOC HR 1,Link to Human Services 1,Emergency Ops,Seattle Public Works,2
+9072,237,A,KC Health,Health Department,Emergency Ops,Seattle Public Works,2
+9232,241,A,UW PD Disp,Dispatch Main,Law Dispatch,University Of Washington Police,2
+9264,243,A,UW PD Tac,Tactical,Law Tac,University Of Washington Police,2
+9296,245,A,UW PD Admin,Administration,Law Talk,University Of Washington Police,2
+15984,3.00E+07,A,Newcatle PW,Public Works,Public Works,Newcastle,2
+16624,40f,A,Shor DPW,Public Works,Public Works,Shoreline,2
+16656,411,A,Shor DPW Shr,Shoreline Public Works,Public Works,Shoreline,2
+17264,437,A,Shor City,Shoreline City,Interop,Shoreline,2
+17584,44b,A,Bell SchWide,Schools - Wide,Schools,Bellevue,2
+17616,44d,A,Bell SchNet2,Schools - NET2,Schools,Bellevue,2
+17648,44f,A,Bell SchNet1,Schools - NET1,Schools,Bellevue,2
+17680,451,A,Bell SchMain,Schools - Maintenance,Schools,Bellevue,2
+17712,453,A,Bell SchSEc,School - Security,Schools,Bellevue,2
+17744,455,A,Bell SchBuse,School - Buses,Schools,Bellevue,2
+17776,457,A,Bell SchComn,School - Common,Schools,Bellevue,2
+17808,459,A,BotPd Invest,Police - Investigations,Law Talk,Bothell,2
+17840,45b,A,BotPd Rec,Police - Records,Law Talk,Bothell,2
+17936,461,A,Red Bld Insp,Public Works - Building Inspectors,Public Works,Redmond,2
+18160,46f,A,RedDPWDrain1,Public Works - Drains 1,Public Works,Redmond,2
+18288,477,A,RedDPWDrain2,Public Works - Drains 2,Public Works,Redmond,2
+18352,47b,A,Red Citywide,Citywide,Multi-Tac,Redmond,2
+18384,47d,A,Red PD Tac 2,Police Tactical 2,Law Tac,Redmond,2
+18416,47f,A,Red PD Tac 1,Police Tactical 1,Law Tac,Redmond,2
+18448,481,A,Red PD Admin,Police Administration,Law Talk,Redmond,2
+18480,483,A,Red PD Inv,Police Investigations,Law Tac,Redmond,2
+18512,485,A,Red PD Traff,Police - Traffic,Law Tac,Redmond,2
+18544,487,A,Red PD Disp,Police - Dispatch,Law Dispatch,Redmond,2
+18576,489,A,Red FD Com,Fire Communications,Fire-Talk,Redmond,2
+18608,48b,A,Red FD Prev,Fire - Prevention,Fire-Talk,Redmond,2
+18672,48f,A,MI Parks,Parks,Public Works,Mercer Island,2
+18704,491,A,MI PW,Public Works,Public Works,Mercer Island,2
+18736,493,A,MI F Admin,Fire Admininstration,Fire-Talk,Mercer Island,2
+18864,49b,A,MI PD Tac,Police Tactical,Law Tac,Mercer Island,2
+18896,49d,A,MI PD Record,Police Records,Law Tac,Mercer Island,2
+18928,49f,A,NC Pol 2,Police Dispatch 3 (Future),Law Dispatch,NORCOM,2
+18992,4a3,A,LFPPD Tac,Police Tactical,Law Tac,Lake Forest Park,2
+19024,4a5,A,LFPPD Disp,Police Dispatch,Law Dispatch,Lake Forest Park,2
+19056,4a7,A,KI Citywide,Citywide,Interop,Kirkland,2
+19088,4a9,A,KI Parks,Parks,Public Works,Kirkland,2
+19120,4ab,A,KI Buildings,Buildings,Public Works,Kirkland,2
+19152,4ad,A,KI PW,Public Works,Public Works,Kirkland,2
+19184,4af,A,KI Eng,Engineering,Public Works,Kirkland,2
+19280,4b5,A,KIPD Rec,Police Records,Law Talk,Kirkland,2
+19312,4b7,A,NC CC 3,Police Car to Car 3 (Future),Law Talk,NORCOM,2
+19344,4b9,A,NC Tac 3,Police Tactical 3 (Future),Law Tac,NORCOM,2
+19376,4bb,A,KIPD Tac 1,Police Tactical 1,Law Tac,Kirkland,2
+19408,4bd,A,NC CC 2,"Police Car to Car 2 (Kirkland, Mercer Island)",Law Talk,NORCOM,2
+19440,4bf,A,NC Tac 2,"Police Tactical 2 (Kirkland, Mercer Island)",Law Tac,NORCOM,2
+19472,4c1,A,NC Pol 2,"Police Dispatch 2 (Kirkland, Mercer Island)",Law Dispatch,NORCOM,2
+19504,4c3,A,KI Fire Admn,Fire Department Administration,Fire-Talk,Kirkland,2
+19536,4c5,A,Iss CityWide,Citywide,Interop,Issaquah,2
+19600,4c9,A,Iss Parks,Parks,Public Works,Issaquah,2
+19792,4d5,A,IPD Tac 2,Police - Tactical 2,Law Tac,Issaquah,2
+19824,4d7,A,IPD Tac 1,Police - Tactical 1,Law Tac,Issaquah,2
+19888,4db,A,IPD Disp,Police - Dispatch,Law Dispatch,Issaquah,2
+19920,4dd,A,Shor FD Admn,Fire - Administration,Fire-Talk,Shoreline,2
+19952,4df,A,Woodnvl PW,Public Works,Public Works,Woodinville,2
+19984,4.00E+01,A,NorS FD Admn,North Shore Fire Administration,Fire-Talk,King County Fire Districts,2
+20048,4.00E+05,A,CH Pnts C/C,Clyde Hill / Points Car to Car,Law Talk,Clyde Hill Police Department,2
+20144,4eb,A,Bot Parks,Parks,Public Works,Bothell,2
+20176,4ed,A,BotPd Tac,Police - Tactical,Law Tac,Bothell,2
+20208,4ef,A,BotPD Disp,Police - Dispatch,Law Dispatch,Bothell,2
+20240,4f1,A,Bell Main,Maintenance,Public Works,Bellevue,2
+20256,4f2,A,Bell ?,Bellevue ?,Schools,Bellevue,2
+20272,4f3,A,Bell Golf Mt,Golf Course Maintenance,Public Works,Bellevue,2
+20368,4f9,A,Bell Streets,Streets,Public Works,Bellevue,2
+20400,4fb,A,Bell St Dsp,Streets - Dispatch,Public Works,Bellevue,2
+20432,4fd,A,Bell Wtr Dsp,Water - Dispatch,Public Works,Bellevue,2
+20464,4ff,A,Bell WA Sew,Water & Service,Public Works,Bellevue,2
+20496,501,A,Bell PW Code,Works - CODE,Public Works,Bellevue,2
+20528,503,A,Bell PW TTac,Works - Trans Tactical,Public Works,Bellevue,2
+20560,505,A,Bell PW Srvy,Works - Survey Crews,Public Works,Bellevue,2
+20592,507,A,Bell ECS,Electronics Communications Service,Public Works,Bellevue,2
+20624,509,A,Bell Trans,Transportation,Transportation,Bellevue,2
+20880,519,A,Bell CityW2,Citywide 2,Interop,Bellevue,2
+20912,51b,A,Bell CityW1,Citywide 1,Interop,Bellevue,2
+21072,525,A,NC Admin,Administrative - NORCOM Staff,Public Works,NORCOM,2
+21104,527,A,NC Tac 15,Police Tactical 15,Law Tac,NORCOM,2
+21136,529,A,NC Tac 14,Police Tactical 14,Law Tac,NORCOM,1
+21168,52b,A,NC Tac 16,Police Tactical 16,Law Tac,NORCOM,2
+21200,52d,A,NC Tac 13,Police Tactical 13,Law Tac,NORCOM,2
+21232,52f,A,NC CC 1,"Police Car to Car 1 (Bellevue, Clyde Hill, Medina)",Law Talk,NORCOM,2
+21264,531,A,BPD Train,Police - Training,Law Talk,Bellevue,2
+21296,533,A,NC Tac 12,Police Tactical 12,Law Tac,NORCOM,2
+21328,535,A,NC Tac 11,Police Tactical 11,Law Tac,NORCOM,1
+21360,537,A,NC Data,Police Data,Law Talk,NORCOM,2
+21392,539,A,NC Tac 1,"Police Tactical 1 (Bellevue, Clyde Hill, Medina)",Law Tac,NORCOM,2
+21424,53b,A,NC Pol 1,"Police Dispatch 1 (Bellevue, Clyde Hill, Medina)",Law Dispatch,NORCOM,2
+21616,547,A,EPSCA,Eastside Public Safety Communications Agency,Public Works,Eastside Public Safety Communications Agency,2
+21648,549,A,ESPW Maint,Maintenance Common,Public Works,Eastside,2
+21680,54b,A,KCFD Dist14A,Fire District 14 (Bellevue) Administration,Fire-Talk,King County Fire Districts,2
+21712,54d,A,NC PD Emer,Police Emergency Button Talk Group,Law Tac,NORCOM,2
+21744,54f,A,LocGov-E,Local Government East,Interop,King County Emergency Operations,2
+21776,551,A,ESPD Intop4,Eastside Police Agencies Interoperation 4,Law Talk,Eastside Police Agencies,2
+21808,553,A,ESPD Intop3,Eastside Police Agencies Interoperation 3,Law Talk,Eastside Police Agencies,2
+21840,555,A,ESPD Intop2,Eastside Police Agencies Interoperation 2,Law Talk,Eastside Police Agencies,2
+21872,557,A,ESPD Intop1,Eastside Police Agencies Interoperation 1,Law Talk,Eastside Police Agencies,2
+21904,559,A,ENTF1,Eastside Narcotics Task Force 1,Law Tac,Eastside Police Agencies,1
+22032,561,A,FTAC 7,Fire Tactical 7,Fire-Tac,NORCOM,2
+22064,563,A,FTAC 6,Fire Tactical 6,Fire-Tac,NORCOM,2
+22096,565,A,FTAC 5,Fire Tactical 5,Fire-Tac,NORCOM,2
+22128,567,A,FTAC 4,Fire Tactical 4,Fire-Tac,NORCOM,2
+22160,569,A,FTAC 3,Fire Tactical 3,Fire-Tac,NORCOM,2
+22192,56b,A,FTAC 2,Fire Tactical 2,Fire-Tac,NORCOM,2
+22224,56d,A,FTAC 1,Fire Tactical 1,Fire-Tac,NORCOM,2
+22288,571,A,NORCOM Amb,NORCOM to Ambulance Companies,Interop,NORCOM,2
+22320,573,A,IFD Disp,Fire Dispatch 3 (No longer used),Deprecated,Issaquah,2
+22352,575,A,FDisp 2,Fire Dispatch 2 (Field Call Com Center),Fire Dispatch,NORCOM,2
+22384,577,A,FDisp 1,Fire Dispatch 1 (Com Center Outbound),Fire Dispatch,NORCOM,2
+22416,579,A,Radio Shop 2,Radio Shop 2,Public Works,King County Government,2
+22544,581,A,KC RadioShop,King County Radio Shop,Public Works,King County Government,2
+22736,58d,A,KCEOC-Ops,Emergency Operations Center Operations,Emergency Ops,King County Emergency Operations,2
+22768,58f,A,KCEOC-Common,Emergency Operations Management Common,Emergency Ops,King County Emergency Operations,2
+22800,591,A,KCEOCUW SEIS,EOC UW SEIS,Emergency Ops,King County Emergency Operations,2
+22864,595,A,KC Emr Mgt1,Emergency Management Zone 1,Emergency Ops,King County Emergency Operations,2
+22896,597,A,KC Emr Mgt3,Emergency Management Zone 3,Emergency Ops,King County Emergency Operations,2
+22928,599,A,KC Emr Mgt4,Emergency Management Zone 4,Emergency Ops,King County Emergency Operations,2
+22960,59b,A,KC Emr Mgt5,Emergency Management Zone 5,Emergency Ops,King County Emergency Operations,2
+23088,5a3,A,Court Sec 2,Court Security 2,Security,King County Sheriff,2
+23120,5a5,A,Court Sec 1,Court Security 1,Security,King County Sheriff,2
+23152,5a7,A,KCSO N,Dispatch North,Law Dispatch,King County Sheriff,2
+23184,5a9,A,KCSO Tac 2,Tactical 2,Law Tac,King County Sheriff,2
+23216,5ab,A,KCSO SE,Dispatch Southeast,Law Dispatch,King County Sheriff,2
+23248,5ad,A,KCSO Tac 3,Tactical 3,Law Tac,King County Sheriff,2
+23280,5af,A,KCSO SW,Dispatch Southwest,Law Dispatch,King County Sheriff,2
+23312,5b1,A,KCSO Tac 4,Tactical 4,Law Tac,King County Sheriff,2
+23344,5b3,A,KCSO NW,Dispatch Northwest,Law Dispatch,King County Sheriff,2
+23376,5b5,A,KCSO Tac 5,Tactical 5,Law Tac,King County Sheriff,2
+23408,5b7,A,KCSO Sp Ops,Special Operations,Law Tac,King County Sheriff,2
+23440,5b9,A,KCSO Tac 6,Tactical 6,Law Tac,King County Sheriff,2
+23472,5bb,A,KCSO Data,Data Warrant Checks,Law Talk,King County Sheriff,2
+23504,5bd,A,KCSO Tac 1,Tactical 1,Law Tac,King County Sheriff,2
+23536,5bf,A,KCSO Tac 7,Tactical 7,Law Tac,King County Sheriff,2
+23568,5c1,A,KCSO Tac 8,Tactical 8,Law Tac,King County Sheriff,2
+23600,5c3,A,KCSO Tac 9,Tactical 9,Law Tac,King County Sheriff,2
+23632,5c5,A,KCSO Tac 12,Tactical 12,Law Tac,King County Sheriff,2
+23664,5c7,A,KC Event 1,Event 1,Multi-Tac,King County Government,2
+23696,5c9,A,KC Event 2,Event 2,Multi-Tac,King County Government,2
+23728,5cb,A,KC Event 3,Event 3,Multi-Tac,King County Government,2
+23760,5cd,A,KC Event 4,Event 4,Multi-Tac,King County Government,2
+23792,5cf,A,KC Event 5,Event 5,Multi-Tac,King County Government,2
+23952,5d9,A,KCMT PD Prim,Police - Primary,Law Dispatch,King County Metro Transit,2
+23984,5db,A,KCMT PD Tac,Police - Tactical,Law Tac,King County Metro Transit,1
+24016,5dd,A,KCMT F7,F7,Transportation,King County Metro Transit,2
+24048,5df,A,KCMT F8,F8,Transportation,King County Metro Transit,2
+24112,5.00E+03,A,KCPD SR F2,Search and Rescue F2,Interop,King County Sheriff,2
+24144,5.00E+05,A,KCPD SR F3,Search and Rescue F3,Interop,King County Sheriff,2
+24176,5.00E+07,A,KC Courts,Courthouse,Public Works,King County Government,2
+24208,5.00E+09,A,KC Court 1,Court Escorts 1,Law Talk,King County Government,2
+24240,5eb,A,KC Court 2,Court Escorts 2,Law Talk,King County Government,2
+24272,5ed,A,KC Court 3,Court Escorts 3,Law Talk,King County Government,2
+24304,5ef,A,AMR Dispatch,AMR Dispatch,EMS Dispatch,King County Fire Districts,2
+24400,5f5,A,KC JailOps 1,Jail Operations 1,Corrections,King County Government,2
+24432,5f7,A,KC JailOps 2,Jail Operations 2,Corrections,King County Government,2
+24464,5f9,A,KC JailOps 3,Jail Operations 3,Corrections,King County Government,2
+24496,5fb,A,KC JailOps 4,Jail Operations 4,Corrections,King County Government,2
+24592,601,A,KC AD C1,Department A.D. Common1,Law Talk,King County Government,2
+24624,603,A,KC AD C2,Department A.D. Common2,Law Talk,King County Government,2
+24656,605,A,KC AD Admn,Department A.D. Administration,Fire-Tac,King County Government,2
+24816,60f,A,Kingdome 1,Kingdome 1,Multi-Tac,Seattle Public Works,2
+24848,611,A,Kingdome 2,Kingdome 2,Multi-Tac,Seattle Public Works,2
+24880,613,A,Kingdome 3,Kingdome 3,Multi-Tac,Seattle Public Works,2
+24912,615,A,Kingdome 4,Kingdome 4,Multi-Tac,Seattle Public Works,2
+24976,619,A,KCSO Tac14,Tactical 14,Law Tac,King County Sheriff,2
+25168,625,A,KCEMS Admin,King County Medic One Administration,Public Works,King County Medic One,2
+25200,627,A,KCEMS Ops 1,King County Medic One Operations 1,Public Works,King County Medic One,2
+25232,629,A,KCEMS Ops 2,King County Medic One Operations 2,Public Works,King County Medic One,2
+25424,635,A,KCSO Tac 10,Tactical 10,Law Tac,King County Sheriff,2
+25552,63d,A,KC Med Exmnr,Medical Examiners Office,Public Works,King County Government,2
+25712,647,A,BFI Admin,Boeing Field Airport Adminstration,Public Works,King County Government,2
+25744,649,A,BFI Fire,Boeing Field Airport Fire & Rescue,Fire Dispatch,King County Government,2
+26448,675,A,KCPW Roads 1,Roads 1,Public Works,King County Government,2
+26480,677,A,KCPW Roads 2,Roads 2,Public Works,King County Government,2
+26608,67f,A,KCSO Tac 16,Tactical 16,Law Tac,King County Sheriff,2
+26672,683,A,KC AnmlCnt T,Animal Control Tactical,Public Works,King County Government,2
+26704,685,A,KC AnmlCnt D,Animal Control Dispatch,Public Works,King County Government,2
+26736,687,A,KCPW FltSrvc,Fleet Services,Public Works,King County Government,2
+26800,68b,A,KC Reclam,Reclamation,Public Works,King County Government,2
+26832,68d,A,KC Waste 1,Solid Waste Division 1,Public Works,King County Government,2
+26896,691,A,KCPW Trtmnt1,Waste Treatment 1,Public Works,King County Government,2
+26928,693,A,KCPW Trtmnt2,Waste Treatment 2,Public Works,King County Government,2
+27024,699,A,KC Youth,Youth Services,Public Works,King County Government,2
+27088,69d,A,KCSO Tac 18,Tactical 18,Law Tac,King County Sheriff,2
+27152,6a1,A,KC SWD/DNR,SWD/DNR,Public Works,King County Government,2
+27216,6a5,A,KC Cabinet,Cabinet,Public Works,King County Government,2
+27280,6a9,A,KCPW Maint,Court Maintenance,Public Works,King County Government,2
+27312,6ab,A,KC Jail,Jail?,Corrections,King County Government,2
+27344,6ad,A,KCSO Tac 30,Tactical 30,Law Tac,King County Sheriff,2
+28336,6eb,A,Snoq PD,Police Dispatch,Law Dispatch,Snoqualmie,2
+28368,6ed,A,Snoq PD Tac1,Police Tactical 1,Law Tac,Snoqualmie,2
+28400,6ef,A,Snoq PD Tac2,Police Tactical 2,Law Tac,Snoqualmie,2
+29136,71d,A,FW PD Pri,Federal Way Police Primary,Law Dispatch,Valley Communications,2
+29168,71f,A,FW PD Tac,Federal Way Police Tactical,Law Tac,Valley Communications,2
+29200,721,A,FWPD Admin,Police - Administration,Law Talk,Federal Way,2
+29808,747,A,Encaw PD Dis,Enumclaw Police Dispatch,Law Dispatch,Enumclaw,2
+30128,75b,A,KCSO Tac 20,Tactical 20,Law Tac,King County Sheriff,2
+30480,771,A,BurFd Admin,Fire District 2 (Burien) Administration,Fire-Talk,King County Fire Districts,2
+30512,773,A,Des FD Admin,Fire District 26 (Des Moines) Administration,Fire-Talk,King County Fire Districts,2
+30672,77d,A,Fire 5,ValleyCom Fire 5,Fire-Talk,Valley Communications,2
+30704,77f,A,Fire 6,ValleyCom Fire 6,Fire-Talk,Valley Communications,2
+30736,781,A,Fire 7,ValleyCom Fire 7,Fire-Talk,Valley Communications,2
+30768,783,A,Fire 8,Not Used,Deprecated,Valley Communications,2
+30800,785,A,Fire 9,Not Used,Deprecated,Valley Communications,2
+30928,78d,A,NHFD Admin,North Highline Fire Administration,Fire-Talk,King County Fire Districts,2
+30960,78f,A,NHFD Prevntn,North Highline Fire Prevention,Fire-Talk,King County Fire Districts,2
+30992,791,A,FWFD Admin,Federal Way Fire Administration,Fire-Talk,King County Fire Districts,2
+31024,793,A,FWFD Prev,Federal Way Fire Prevention,Fire-Talk,King County Fire Districts,2
+31056,795,A,SeaTacFD Ad1,Fire Administration 1,Fire-Talk,SeaTac,2
+31120,799,A,VIFR,Fire District 13 (Vashon Island) Fire,Fire-Talk,King County Fire Districts,2
+31216,79f,A,SeaTacFD Ad2,Fire Administration 2,Fire-Talk,SeaTac,2
+31248,7a1,A,VIFR Tac,Fire District 13 (Vashon Island) Tactical,Fire-Tac,King County Fire Districts,2
+31408,7ab,A,FTAC 8,Fire Tactical 8,Fire-Tac,NORCOM,2
+31440,7ad,A,FTAC 9,Fire Tactical 9,Fire-Tac,NORCOM,2
+31472,7af,A,FTAC 10,Fire Tactical 10,Fire-Tac,NORCOM,2
+31504,7b1,A,EFR Bat 1,Eastside Fire and Rescue Battalion 1,Fire-Talk,King County Fire Districts,2
+31536,7b3,A,EFR Bat 2,Eastside Fire and Rescue Battalion 2,Fire-Talk,King County Fire Districts,2
+31568,7b5,A,EFR Bat 3,Eastside Fire and Rescue Battalion 3,Fire-Talk,King County Fire Districts,2
+31600,7b7,A,EFR Bat 4,Eastside Fire and Rescue Battalion 4,Fire-Talk,King County Fire Districts,2
+31632,7b9,A,EFR Bat 5,Eastside Fire and Rescue Battalion 5,Fire-Talk,King County Fire Districts,2
+31664,7bb,A,Duv FD Admin,Fire District 45 (Duvall) Administration,Fire-Talk,King County Fire Districts,2
+31696,7bd,A,FD 27 Admin,Fire District 27 (Fall City) Administration,Fire-Talk,King County Fire Districts,2
+31728,7bf,A,SnoPas Admin,Fire District 51 (Snoqualmie Pass) Administration,Fire-Talk,King County Fire Districts,2
+31792,7c3,A,EFR MecFac,Eastside Fire and Rescue Mechanic and Facilities,Fire-Talk,King County Fire Districts,2
+31824,7c5,A,EFR FMPubEd,Eastside Fire and Rescue Fire Marshall and Public Education,Fire-Talk,King County Fire Districts,2
+31856,7c7,A,ESFD Admin,Eastside Fire and Rescue Administration,Fire-Talk,King County Fire Districts,2
+31888,7c9,A,Snoq FAdmin,Fire Administration,Fire-Talk,Snoqualmie,2
+32048,7d3,A,Encaw Fire,Enumclaw Fire Dispatch 10,Fire Dispatch,Enumclaw,2
+32080,7d5,A,EncawFireTac,Enumclaw Tac Fire 11,Fire-Tac,Enumclaw,2
+32784,801,A,Duv CityWide,Citywide,Interop,Duvall,2
+32816,803,A,Duv PS,Public Safety,Law Talk,Duvall,2
+32848,805,A,SNOQ Citywde,Citywide,Multi-Tac,Snoqualmie,2
+32880,807,A,FW Pub Safe,Public Safety,Law Talk,Federal Way,2
+32912,809,A,FW Citywide,Citywide,Multi-Tac,Federal Way,2
+33072,813,A,NorParkPDTac,Police - Tactical,Law Tac,Normandy Park,2
+33104,815,A,NorParkPDOps,Police - Dispatch,Law Dispatch,Normandy Park,2
+33296,821,A,Black DiamPS,Police,Law Talk,Black Diamond,2
+33360,825,A,Black DiamAD,Administration,Law Talk,Black Diamond,2
+33616,835,A,KC Water 20,Water District 20,Public Works,King County Water Districts,2
+33648,837,A,KC Wtr Hghln,Highline Water District,Public Works,King County Water Districts,2
+34256,85d,A,KC PF D1,Public Facilities District 1,Public Works,King County Government,2
+35120,893,A,FWPS Sec Pri,Schools - Security,Security,Federal Way,2
+35152,895,A,HL Schools,Schools,Schools,Highline,2
+35344,8a1,A,Hl SchoolBus,School - Buses,Transportation,Highline,2
+35376,8a3,A,HL SchoolMin,Schools - Maintenance,Schools,Highline,2
+35408,8a5,A,FWPS Admin,Schools - Administration,Schools,Federal Way,2
+35440,8a7,A,FWPS SEC Tac,Schools - Security Tactical,Security,Federal Way,2
+35664,8b5,A,HarVew Multi,Hospital Multigroup,Business,Harborview Hospital,2
+35696,8b7,A,HarVew Tac1,Tactical 1,Security,Harborview Hospital,2
+35728,8b9,A,HarVew Sec,Security,Security,Harborview Hospital,2
+35760,8bb,A,HarVew Tac,Tactical 2,Security,Harborview Hospital,2
+35792,8bd,A,HarVew Pro,Project,Business,Harborview Hospital,2
+35824,8bf,A,KCSO Tac 22,Tactical 22 - Surveillance,Law Tac,King County Sheriff,2
+35856,8c1,A,HarVew Ops,HMC-2,Business,Harborview Hospital,2
+35888,8c3,A,HarVew House,Housekeeping,Business,Harborview Hospital,2
+35920,8c5,A,HarVew Hmc4,HMC-4,Business,Harborview Hospital,2
+35952,8c7,A,HarVew Call,Calling,Business,Harborview Hospital,2
+36848,8ff,A,Alg PD Prim,"Alogona, Pacific, Black Diamond Police Primary",Law Dispatch,Valley Communications,2
+36880,901,A,Alg PD Tac,"Algona,Pacific, Black Diamond Police Tactical",Law Tac,Valley Communications,2
+36912,903,A,Alg PD Admin,Algona Police Administration,Law Talk,Algona-Pacific,2
+36944,905,A,Aubur PD Pri,Auburn Police Primary,Law Dispatch,Valley Communications,2
+36976,907,A,Aubur PD Tac,Auburn Police Tactical,Law Tac,Valley Communications,2
+37008,909,A,Abur PD Admi,Auburn Police Administration,Law Talk,Auburn,2
+37040,90b,A,Des PD Pri,Des Moines Police Primary,Law Dispatch,Valley Communications,2
+37072,90d,A,Des PD Tac,Des Moines Police Tactical,Law Tac,Valley Communications,2
+37104,90f,A,Des PD Admin,Police - Administration,Law Talk,Des Moines,2
+37136,911,A,Kent PD Pri,Kent Police Primary,Law Dispatch,Valley Communications,2
+37168,913,A,Kent PD Tac,Kent Police Tactical,Law Tac,Valley Communications,2
+37200,915,A,Kent PD Adm,Kent Police Administration,Law Talk,Kent,2
+37232,917,A,RetPD Pri,Renton Police Primary,Law Dispatch,Valley Communications,2
+37264,919,A,RetPD Tac,Renton Police Tactical,Law Tac,Valley Communications,2
+37296,91b,A,RetPD Admin,Renton Police Administration,Law Talk,Renton,2
+37328,91d,A,Tuk PD Pri,Tukwila Police Primary,Law Dispatch,Valley Communications,2
+37360,91f,A,Tuk PD Tac,Tukwila Police Tactical,Law Tac,Valley Communications,2
+37392,921,A,Tuk PD Admin,Tukwila Police Administration,Law Talk,Tukwila,2
+37424,923,A,VC PD Data,Police Data,Law Talk,Valley Communications,2
+37456,925,A,ValComNarc2,Police Narcotics 2,Law Tac,Valley Communications,2
+37488,927,A,ValCom Spec1,ValleyCom Police Special Operations 1,Law Tac,Valley Communications,2
+37520,929,A,ValCom Spec2,ValleyCom Police Special Operations 2,Law Tac,Valley Communications,2
+37552,92b,A,ValCom Spec3,ValleyCom Police Special Operations 3,Law Tac,Valley Communications,2
+37584,92d,A,ValCom Spec4,ValleyCom Police Special Operations 4,Law Tac,Valley Communications,2
+37616,92f,A,PD Trng 1,ValleyCom Police Training 1,Law Talk,Valley Communications,2
+37648,931,A,PD Trng 2,ValleyCom Police Training 2,Law Talk,Valley Communications,2
+37680,933,A,ValCom Spec5,ValleyCom Police Special Operations 5,Law Tac,Valley Communications,2
+38096,94d,A,Muck PD,Muckleshoot Police,Law Dispatch,Tribal,2
+38384,95f,A,VC Admin,ValleyCom Administration,Public Works,Valley Communications,2
+38448,963,A,Fire 1,ValleyCom Fire 1,Fire Dispatch,Valley Communications,2
+38480,965,A,Fire 2,ValleyCom Fire 2,Fire-Tac,Valley Communications,2
+38512,967,A,Fire 3,ValleyCom Fire 3,Fire-Tac,Valley Communications,2
+38544,969,A,Fire 4,ValleyCom Fire 4,Fire-Tac,Valley Communications,2
+38576,96b,A,Ops 1,ValleyCom Operations 1,Fire-Tac,Valley Communications,2
+38608,96d,A,Ops 2,ValleyCom Operations 2,Fire-Tac,Valley Communications,2
+38640,96f,A,Ops 3,ValleyCom Operations 3,Fire-Tac,Valley Communications,2
+38672,971,A,KCFD VC Ops4,ValleyCom Operations 4 (Not Used),Deprecated,Valley Communications,2
+38704,973,A,KCFD VC Ops5,ValleyCom Operations 5 (Not used),Deprecated,Valley Communications,2
+38736,975,A,KCFD VC Ops6,ValleyCom Operations 6 (Not Used),Deprecated,Valley Communications,2
+38832,97b,A,Kent FD Adm,Kent Fire Administration,Fire-Talk,Kent,2
+38864,97d,A,Kent FD Prev,Kent Fire Prevention,Fire-Talk,Kent,2
+38896,97f,A,Pac F Admin,Pacific Fire Administration,Fire-Talk,Pacific,2
+38928,981,A,RetFD Admin,Renton Fire Administration,Fire-Talk,Renton,2
+38960,983,A,RetFD Prev,Renton Fire Prevention,Fire-Talk,Renton,2
+38992,985,A,Tuk FD AD,Tukwila Fire Administration,Fire-Talk,Tukwila,2
+39024,987,A,Tuk FD Prev,Tukwila Fire Prevention,Fire-Talk,Tukwila,2
+39056,989,A,KCFD17 Admin,Fire District 17 Administration,Fire-Talk,King County Fire Districts,2
+39088,98b,A,KCFD20 Admin,Fire District 20 Administration,Fire-Talk,King County Fire Districts,2
+39120,98d,A,KCFD40 Admin,Fire District 40 Administration,Fire-Talk,King County Fire Districts,2
+39152,98f,A,KCFD43 Admin,Fire District 43 Administration,Fire-Talk,King County Fire Districts,2
+39184,991,A,KCFD44 Admin,Fire District 44 Administration,Fire-Talk,King County Fire Districts,2
+39216,993,A,KCFD46 Admin,Fire District 46 Administration,Fire-Talk,King County Fire Districts,2
+39248,995,A,KCFD47 Admin,Fire District 47 Administration,Fire-Talk,King County Fire Districts,2
+39696,9b1,A,VCMutAid,ValleyCom Mutual Aid,Multi-Tac,Valley Communications,2
+40080,9c9,A,Abur Pub Saf,Auburn Public Safety,Law Talk,Auburn,2
+40144,9cd,A,Kent PS,Kent Public Safety,Law Talk,Kent,2
+40176,9cf,A,Renton PS,Renton Public Safety,Law Talk,Renton,2
+40208,9d1,A,Tuk Pub Safe,Tukwila Public Safety,Interop,Tukwila,2
+40240,9d3,A,VCPubSafe,ValleyCom Public Safety,Law Talk,Valley Communications,2
+41008,a03,A,KC Cmptr Svs,King County Computer Services,Public Works,King County Government,2
+41040,a05,A,Kent ECC,Kent Emergency Coordination Center,Emergency Ops,Kent,2
+41232,a11,A,Kent Pks Eoc,Kent Parks Emergency Coordination Center,Emergency Ops,Kent,2
+41264,a13,A,Kent Parks1,Kent Parks 1,Public Works,Kent,2
+41776,a33,A,SC Water,Soos Creek Water District,Public Works,King County Water Districts,2
+41808,a35,A,SC Data,Soos Creek Water District Data,Public Works,King County Water Districts,2
+41840,a37,A,CedRivWater,Cedar River Water District,Public Works,King County Water Districts,2
+41872,a39,A,CovWaterDis,Covington Water District,Public Works,King County Water Districts,2
+41904,a3b,A,Wtr Dist 111,Water Dist 111,Public Works,King County Water Districts,2
+42896,a79,A,City Merge,ValleyCom City Merge,Public Works,Valley Communications,2
+43024,a81,A,Kent City,Kent City,Interop,Kent,2
+43056,a83,A,RetCitywide,Renton Citywide,Interop,Renton,2
+43120,a87,A,ValComCom,ValleyCom Common,Law Talk,Valley Communications,2
+43600,aa5,A,Kent SchOps,Kent Schools Operations,Schools,Kent,2
+43632,aa7,A,RetSc School,Renton Schools,Schools,Renton,2
+43728,aad,A,Kent SchSec,Kent Schools Security,Schools,Kent,2
+43760,aaf,A,Kent SD TraB,Kent SchoolsTransportation B,Schools,Kent,2
+43792,ab1,A,Kent SD Tra1,Kent Schools Transportation 1,Schools,Kent,2
+43824,ab3,A,Kent SD Tra2,Kent Schools Transportation 2,Schools,Kent,2
+43856,ab5,A,Kent SD Mat,Kent Schools Maintenance,Schools,Kent,2
+44816,af1,D,SPD AS NARC,Narcotics,Law Talk,Seattle Police,1
+44848,af3,D,SPD DVICE1,Vice 1 - Digital,Law Talk,Seattle Police,2
+44880,af5,D,SPD DVICE2,Vice 2- Digital,Law Talk,Seattle Police,2
+44976,afb,D,SPD DTAC1,Tactical 1 - Digital,Law Talk,Seattle Police,2
+45008,afd,D,SPD DTAC2,Tactical 2 - Digital,Law Talk,Seattle Police,2
+60048,ea9,A,LINK RR MAIN,Link Light Rail Main,Transportation,King County Metro Transit,2
+60144,eaf,A,LINK RR OPS,Link Light Rail Yard Ops,Transportation,King County Metro Transit,2
+60272,eb7,A,SND TRAN SEC,Sound Transit Security,Security,King County Metro Transit,2
+60304,eb9,A,TRANS SEC 2,Transit Tunnel Security 2,Security,King County Metro Transit,2
+60336,ebb,A,TRANS SEC 1,Transit Tunnel Security 1,Security,King County Metro Transit,2
+60464,ec3,A,SND TRANS PD,Sound Transit Police,Law Dispatch,King County Metro Transit,2
+60848,edb,A,Auburn Genl,Auburn General,Hospital,Hospital,2
+60880,edd,A,Chldrn Hosp,Childrens,Hospital,Hospital,2
+60944,ee1,A,Evgrgrn Hosp,Evergreen,Hospital,Hospital,2
+60976,ee3,A,Grp Hlth-E,Group Health East,Hospital,Hospital,2
+61008,ee5,A,Grp Hlth-Sea,Group Health Seattle,Hospital,Hospital,2
+61040,ee7,A,Harborview,Harborview,Hospital,Hospital,2
+61072,ee9,A,HighlineHosp,Highline,Hospital,Hospital,2
+61104,eeb,A,NW Hosp,Northwest,Hospital,Hospital,2
+61136,eed,A,Overlk Hosp,Overlake,Hospital,Hospital,2
+61168,eef,A,Proivd Hosp,Providence,Hospital,Hospital,2
+61264,ef5,A,St Fran Hosp,St Francis,Hospital,Hospital,2
+61296,ef7,A,SwedishBlrd,Swedish - Ballard,Hospital,Hospital,2
+61328,ef9,A,Swedish Hosp,Swedish,Hospital,Hospital,2
+61360,efb,A,UW Hosp,University of Washington,Hospital,Hospital,2
+61392,efd,A,Veterns Hosp,Veterans,Hospital,Hospital,2
+61424,eff,A,Valley Med,Valley Medical Center,Hospital,Hospital,2
+61456,f01,A,VM Hosp,Virginia Mason,Hospital,Hospital,2
+61488,f03,A,Stevens Hosp,Stevens Memorial,Hospital,Hospital,2
+61680,f0f,A,Hosp Common,Hospital Common,Hospital,Hospital,2
+61712,f11,A,PS BlodCntrs,Puget Sound Blood Centers,Business,Business,2
+61776,f15,A,Airlift Nw,Airlift NW,EMS Dispatch,Hospital,2
+61808,f17,A,MedCom Cntrl,Medcom Control,EMS-Talk,Hospital,2
+61840,f19,A,MedCom 2,Medcom 2,EMS-Tac,Hospital,2
+61968,f21,A,KC DPH OPS3,Public Health Operations 3,Public Works,King County Government,2
+62000,f23,A,KC DOH OPS1,Public Health Operations 1,Public Works,King County Government,2
+62032,f25,A,KC DOH OPS2,Public Health Operations 2,Public Works,King County Government,2
+62064,f27,A,KC DOH OPS2,Public Health Common 1,Public Works,King County Government,2
+62384,f3b,A,KCFD Unk,Unknown,Fire-Talk,King County Fire Districts,2
+62416,f3d,A,KCFD MA Z1,Fire Mutual Aid Zone 1,Interop,Mutual Aid,2
+62448,f3f,A,KCFD MA Z2,Fire Mutual Aid Zone 2,Interop,Mutual Aid,2
+62480,f41,A,KCFD MA Z3,Fire Mutual Aid Zone 3,Interop,Mutual Aid,2
+62512,f43,A,KCFD MA Z4,Fire Mutual Aid Zone 4,Interop,Mutual Aid,2
+62544,f45,A,KCFD MA Z5,Fire Mutual Aid Zone 5,Interop,Mutual Aid,2
+62576,f47,A,KCFD MA P1,Fire Mutual Aid Pool 1,Interop,Mutual Aid,2
+62608,f49,A,KCFD MA P2,Fire Mutual Aid Pool 2,Interop,Mutual Aid,2
+62640,f4b,A,Emer Z1,Fire Zone 1 Emergency Button Talk Group,Fire-Tac,NORCOM,2
+62704,f4f,A,Emer Z3,Fire Zone 3 Emergency Button Talkgroup,Fire-Tac,Valley Communications,2
+62736,f51,A,Emer Z4,Fire Zone 4 Emergency Button Talkgroup,Fire-Tac,Valley Communications,2
+62800,f55,A,PSAP to PSAP,Public Safety Answering Point Common,Interop,King County Emergency Operations,2
+62832,f57,A,KC/SEA 1,King County / Seattle Interoperations,Interop,King County Emergency Operations,2
+62864,f59,A,LERN,Law Enforcement Radio Network,Interop,King County Emergency Operations,2
+62896,f5b,A,MARS,King County Mutual Aid Radio System,Interop,King County Emergency Operations,2
+62928,f5d,A,PSOPS N1,Public Safety Operations N1,Interop,King County Emergency Operations,2
+62960,f5f,A,PSOPS N2,Public Safety Operations N2,Interop,King County Emergency Operations,2
+62992,f61,A,PSOPS S1,Public Safety Operations S1,Interop,King County Emergency Operations,2
+63024,f63,A,PSOPS S2,Public Safety Operations S2,Interop,King County Emergency Operations,2
+63056,f65,A,KC LocGov N,Interop North Local Government,Interop,King County Emergency Operations,2
+63088,f67,A,KC LocGov S,Interop South Local Government,Interop,King County Emergency Operations,2
+63120,f69,A,KC All Gov,Interop All Local Government,Interop,King County Emergency Operations,2
+63184,f6d,A,Comm 1,Radio System Technicians Communications 1,Public Works,King County Government,2
+63216,f6f,A,Comm 2,Radio System Technicians Communications 2,Public Works,King County Government,2
+63504,f81,A,IMS-All,Incident Management System - All,Interop,King County Emergency Operations,2
+63536,f83,A,IMS-N,Incident Management System - North,Interop,King County Emergency Operations,2
+63568,f85,A,IMS-S,Incident Management System - South,Interop,King County Emergency Operations,2
