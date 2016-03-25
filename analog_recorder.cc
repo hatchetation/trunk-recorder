@@ -80,7 +80,7 @@ analog_recorder::analog_recorder(Source *src)
 
 	// levels
 	//   adjusts audio volume
-	levels = gr::blocks::multiply_const_ff::make(1);
+	levels = gr::blocks::multiply_const_ff::make(1.2);
 
 	// valve
 	//
@@ -110,19 +110,18 @@ analog_recorder::analog_recorder(Source *src)
 
 	// high_pass
 	//
-	highpass_resampler_taps = gr::filter::firdes::high_pass(1,
+	highpass_resampler_taps = gr::filter::firdes::high_pass_2(1,
 						 samp_rate,
 						 300,	//cutoff
 						 50,	//transition
-						 WIN_HANN);
+						 80);
+						 // hann -gr-smartnet uses
 
-	//highpass = gr::filter::
-	highpass = gr::filter::fir_filter_fff::make(1, highpass_resampler_taps);
+	//highpass = gr::filter::fir_filter_fff::make(1, highpass_resampler_taps);
 
 	// decim_audio
 	//
-	audio_resampler_taps = design_filter(1, 6);
-	decim_audio = gr::filter::fir_filter_fff::make(6, audio_resampler_taps); //downsample from 48k to 8k
+	decim_audio = gr::filter::fir_filter_fff::make(6, highpass_resampler_taps); //downsample from 48k to 8k
 
 	// wav_sink & logging
 	//
@@ -147,8 +146,8 @@ analog_recorder::analog_recorder(Source *src)
 	connect(downsample_sig, 0, squelch, 0);
 	connect(squelch, 0,	demod, 0);
 	connect(demod, 0, deemph, 0);
-	connect(deemph, 0, highpass, 0);
-	connect(highpass, 0, decim_audio, 0);
+	connect(deemph, 0, levels,0);
+	connect(levels, 0, decim_audio, 0);
 	connect(decim_audio, 0, wav_sink, 0);
 
 
