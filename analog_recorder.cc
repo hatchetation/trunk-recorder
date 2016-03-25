@@ -35,8 +35,10 @@ analog_recorder::analog_recorder(Source *src)
 	float channel_rate = 4800 * samp_per_sym;
 	double pre_channel_rate = samp_rate/decim;
 
-	lpf_taps =  gr::filter::firdes::low_pass(1, samp_rate, xlate_bandwidth/2, 6000);
-	//lpf_taps =  gr::filter::firdes::low_pass(1, samp_rate, xlate_bandwidth/2, 3000);
+	lpf_taps =  gr::filter::firdes::low_pass(1,			//gain
+						 samp_rate,
+						 xlate_bandwidth/2,	//cutoff, 7k
+						 6000);			//width
 
 	prefilter = gr::filter::freq_xlating_fir_filter_ccf::make(decim,
 	            lpf_taps,
@@ -47,24 +49,50 @@ analog_recorder::analog_recorder(Source *src)
 	pre_channel_rate = floor(pre_channel_rate / d);  // 25
 	resampler_taps = design_filter(channel_rate, pre_channel_rate);
 
-	downsample_sig = gr::filter::rational_resampler_base_ccf::make(channel_rate, pre_channel_rate, resampler_taps); //downsample from 100k to 48k
+	//   downsample from 100k to 48k
+	downsample_sig = gr::filter::rational_resampler_base_ccf::make(channel_rate,
+								       pre_channel_rate,
+								       resampler_taps);
 
-	//on a trunked network where you know you will have good signal, a carrier power squelch works well. real FM receviers use a noise squelch, where
-	//the received audio is high-passed above the cutoff and then fed to a reverse squelch. If the power is then BELOW a threshold, open the squelch.
-
-	squelch = gr::analog::pwr_squelch_cc::make(-28, 		//squelch point
+	// squelch
+	//
+	squelch = gr::analog::pwr_squelch_cc::make(-28, 	//squelch point
 						   0.01, 	//alpha
 						   10, 		//ramp
 						   true); 	//gated so that the audio recording doesn't contain blank spaces between transmissions
 
+	// demod
+	//
+	//  wtf is going on here...
+	//
+	//  gain = fm_bw/(2*math.pi*deviation)
+	//  where 48k is channel_rate?
+	//  max_dev is 5kHz
+	//
+	//  in another example, "quad_rate" is set to channel spacing when
+	//  calculating gain...
+	//
+	// see:
+	// http://gnuradio.org/redmine/projects/gnuradio/wiki/signalprocessing
 
-	//k = quad_rate/(2*math.pi*max_dev) = 48k / (6.283185*5000) = 1.527
-
+	//k = sample_rate/(2*math.pi*max_dev) = 48k / (6.283185*5000) = 1.527
 	demod = gr::analog::quadrature_demod_cf::make(1.527); //1.6 //1.4);
-	levels = gr::blocks::multiply_const_ff::make(1); //33);
+
+
+
+
+
+	// levels
+	//   adjusts audio volume
+	levels = gr::blocks::multiply_const_ff::make(1);
+
+	// valve
+	//
 	valve = gr::blocks::copy::make(sizeof(gr_complex));
 	valve->set_enabled(false);
 
+	// deemph
+	//
 	float tau = 0.000075; //75us
 	float w_p = 1/tau;
 	float w_pp = tan(w_p / (48000.0*2));
@@ -83,10 +111,26 @@ analog_recorder::analog_recorder(Source *src)
 
 	deemph = gr::filter::iir_filter_ffd::make(btaps,ataps);
 
-	audio_resampler_taps = design_filter(1, 6);
-	decim_audio = gr::filter::fir_filter_fff::make(6, audio_resampler_taps); //downsample from 48k to 8k
+
+	// high_pass
+	//
+	highpass_resampler_taps = gr::filter::firdes::high_pass(1,
+						 samp_rate,
+						 300,	//cutoff
+						 50);	//transition
+						 // hann -gr-smartnet uses
+
+	//highpass = gr::filter::
+
+	// decim_audio
+	//
+	//audio_resampler_taps = design_filter(1, 6);
+	//decim_audio = gr::filter::fir_filter_fff::make(6, audio_resampler_taps); //downsample from 48k to 8k
+	decim_audio = gr::filter::fir_filter_fff::make(6, highpass_resampler_taps); //downsample from 48k to 8k
 
 
+	// wav_sink & logging
+	//
 	iam_logging = false;
 
 	tm *ltm = localtime(&starttime);

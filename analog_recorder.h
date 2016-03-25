@@ -23,7 +23,6 @@
 #include <gnuradio/filter/fir_filter_ccf.h>
 #include <gnuradio/filter/fir_filter_fff.h>
 #include <gnuradio/filter/freq_xlating_fir_filter_ccf.h>
-#include <gnuradio/filter/firdes.h>
 #include <gnuradio/filter/rational_resampler_base_ccc.h>
 #include <gnuradio/analog/quadrature_demod_cf.h>
 #include <gnuradio/analog/sig_source_f.h>
@@ -92,10 +91,11 @@ private:
 	std::vector<float> lpf_taps;
 	std::vector<float> resampler_taps;
 	std::vector<float> audio_resampler_taps;
+	std::vector<float> highpass_resampler_taps;
 	std::vector<float> sym_taps;
 
     Source *source;
-    
+
 	/* GR blocks */
 	gr::filter::iir_filter_ffd::sptr deemph;
 	gr::filter::fir_filter_ccf::sptr lpf;
@@ -107,7 +107,6 @@ private:
 	gr::blocks::file_sink::sptr fs;
 	gr::blocks::multiply_const_ff::sptr quiet;
 	gr::blocks::multiply_const_ff::sptr levels;
-
 
 	gr::filter::rational_resampler_base_ccf::sptr downsample_sig;
 	gr::filter::fir_filter_fff::sptr decim_audio;
