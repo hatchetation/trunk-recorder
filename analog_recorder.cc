@@ -78,10 +78,6 @@ analog_recorder::analog_recorder(Source *src)
 	//k = sample_rate/(2*math.pi*max_dev) = 48k / (6.283185*5000) = 1.527
 	demod = gr::analog::quadrature_demod_cf::make(1.527); //1.6 //1.4);
 
-
-
-
-
 	// levels
 	//   adjusts audio volume
 	levels = gr::blocks::multiply_const_ff::make(1);
@@ -121,13 +117,12 @@ analog_recorder::analog_recorder(Source *src)
 						 // hann -gr-smartnet uses
 
 	//highpass = gr::filter::
+	highpass = gr::filter::fir_filter_fff::make(1, highpass_resampler_taps);
 
 	// decim_audio
 	//
-	//audio_resampler_taps = design_filter(1, 6);
-	//decim_audio = gr::filter::fir_filter_fff::make(6, audio_resampler_taps); //downsample from 48k to 8k
-	decim_audio = gr::filter::fir_filter_fff::make(6, highpass_resampler_taps); //downsample from 48k to 8k
-
+	audio_resampler_taps = design_filter(1, 6);
+	decim_audio = gr::filter::fir_filter_fff::make(6, audio_resampler_taps); //downsample from 48k to 8k
 
 	// wav_sink & logging
 	//
@@ -152,7 +147,8 @@ analog_recorder::analog_recorder(Source *src)
 	connect(downsample_sig, 0, squelch, 0);
 	connect(squelch, 0,	demod, 0);
 	connect(demod, 0, deemph, 0);
-	connect(deemph, 0, decim_audio, 0);
+	connect(deemph, 0, highpass, 0);
+	connect(highpass, 0, decim_audio, 0);
 	connect(decim_audio, 0, wav_sink, 0);
 
 

@@ -109,6 +109,7 @@ private:
 	gr::blocks::multiply_const_ff::sptr levels;
 
 	gr::filter::rational_resampler_base_ccf::sptr downsample_sig;
+	gr::filter::fir_filter_fff::sptr highpass;
 	gr::filter::fir_filter_fff::sptr decim_audio;
 	gr::filter::rational_resampler_base_fff::sptr upsample_audio;
 	gr::analog::pwr_squelch_cc::sptr squelch;
