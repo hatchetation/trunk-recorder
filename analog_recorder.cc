@@ -80,7 +80,7 @@ analog_recorder::analog_recorder(Source *src)
 
 	// levels
 	//   adjusts audio volume
-	levels = gr::blocks::multiply_const_ff::make(1.2);
+	levels = gr::blocks::multiply_const_ff::make(1);
 
 	// valve
 	//
