@@ -49,7 +49,7 @@ void Call::end_call() {
     
             if (this->get_recording() == true) {
 
-                BOOST_LOG_TRIVIAL(info) << "\tRemoving TG: " << this->get_talkgroup() << "\tElapsed: " << this->elapsed() << std::endl;
+                BOOST_LOG_TRIVIAL(info) << "\tDone recording.\tTG: " << this->get_talkgroup() << "\tElapsed: " << this->elapsed() << std::endl;
 
                 std::ofstream myfile (status_filename);
                 if (myfile.is_open())
