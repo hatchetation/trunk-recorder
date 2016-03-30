@@ -110,18 +110,19 @@ analog_recorder::analog_recorder(Source *src)
 
 	// high_pass
 	//
-	highpass_resampler_taps = gr::filter::firdes::high_pass_2(1,
+/*	highpass_resampler_taps = gr::filter::firdes::high_pass_2(1,
 						 samp_rate,
 						 300,	//cutoff
 						 50,	//transition
 						 80);
 						 // hann -gr-smartnet uses
-
+*/
 	//highpass = gr::filter::fir_filter_fff::make(1, highpass_resampler_taps);
 
 	// decim_audio
 	//
-	decim_audio = gr::filter::fir_filter_fff::make(6, highpass_resampler_taps); //downsample from 48k to 8k
+	audio_resampler_taps = design_filter(1, 6);
+	decim_audio = gr::filter::fir_filter_fff::make(6, audio_resampler_taps); //downsample from 48k to 8k
 
 	// wav_sink & logging
 	//
