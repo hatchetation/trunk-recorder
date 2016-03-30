@@ -26,7 +26,9 @@ std::vector<TrunkMessage> SmartnetParser::parse_message(std::string s) {
 
 
 	message.message_type = UNKNOWN;
+	message.tdma = 0;
 	message.encrypted = false;
+
 
 	std::vector<std::string> x;
 	boost::split(x, s, boost::is_any_of(","), boost::token_compress_on);
