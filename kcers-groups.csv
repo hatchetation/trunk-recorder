@@ -60,7 +60,7 @@
 4016,0fb,A,SPD Cmnd 5,Command 5,Law Talk,Seattle Police,2
 4048,0fd,A,SPD Harbor,Harbor Patrol,Law Tac,Seattle Police,1
 4080,0ff,A,SPD ITS,Information Technology Support,Law Tac,Seattle Police,2
-4112,101,A,SPD Narc 2,Narcotics 2,Law Tac,Seattle Police,2
+4112,101,A,SPD Narc 2,Narcotics 2,Law Tac,Seattle Police,1
 4144,103,A,SPD Narc 3,Narcotics 3,Law Tac,Seattle Police,2
 4176,105,A,SPD NTF,Narcotics Task Force,Law Talk,Seattle Police,1
 4208,107,A,SPD VICE 1,Vice 1,Law Talk,Seattle Police,2
@@ -69,8 +69,8 @@
 4304,10d,A,SPD CIS 2,Criminal Investigation Services 2,Law Talk,Seattle Police,2
 4336,10f,A,SPD EM RESP1,Emergency Response Team 1,Law Talk,Seattle Police,2
 4368,111,A,SPD EM RESP2,Emergency Response Team 2,Law Talk,Seattle Police,2
-4400,113,E,SPD HOS N1,Hostage Negotiator 1,Law Talk,Seattle Police,2
-4432,115,E,SPD HOS N2,Hostage Negotiator 2,Law Talk,Seattle Police,2
+4400,113,E,SPD HOS N1,Hostage Negotiator 1,Law Talk,Seattle Police,1
+4432,115,E,SPD HOS N2,Hostage Negotiator 2,Law Talk,Seattle Police,1
 4464,117,A,SPD INTERNAL,Internal Investigation,Law Talk,Seattle Police,2
 4496,119,A,SPD Trng 1,Training 1,Law Tac,Seattle Police,2
 4528,11b,A,SPD Trng 2,Training 2,Law Tac,Seattle Police,2
