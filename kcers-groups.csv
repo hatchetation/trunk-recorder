@@ -168,9 +168,9 @@
 19312,4b7,A,NC CC 3,Police Car to Car 3 (Future),Law Talk,NORCOM,2
 19344,4b9,A,NC Tac 3,Police Tactical 3 (Future),Law Tac,NORCOM,2
 19376,4bb,A,KIPD Tac 1,Police Tactical 1,Law Tac,Kirkland,2
-19408,4bd,A,NC CC 2,"Police Car to Car 2 (Kirkland, Mercer Island)",Law Talk,NORCOM,2
-19440,4bf,A,NC Tac 2,"Police Tactical 2 (Kirkland, Mercer Island)",Law Tac,NORCOM,2
-19472,4c1,A,NC Pol 2,"Police Dispatch 2 (Kirkland, Mercer Island)",Law Dispatch,NORCOM,2
+19408,4bd,A,NC CC 2,Police Car to Car 2 (Kirkland/Mercer Island),Law Talk,NORCOM,2
+19440,4bf,A,NC Tac 2,Police Tactical 2 (Kirkland/Mercer Island),Law Tac,NORCOM,2
+19472,4c1,A,NC Pol 2,Police Dispatch 2 (Kirkland/Mercer Island),Law Dispatch,NORCOM,2
 19504,4c3,A,KI Fire Admn,Fire Department Administration,Fire-Talk,Kirkland,2
 19536,4c5,A,Iss CityWide,Citywide,Interop,Issaquah,2
 19600,4c9,A,Iss Parks,Parks,Public Works,Issaquah,2
@@ -203,13 +203,13 @@
 21136,529,A,NC Tac 14,Police Tactical 14,Law Tac,NORCOM,1
 21168,52b,A,NC Tac 16,Police Tactical 16,Law Tac,NORCOM,2
 21200,52d,A,NC Tac 13,Police Tactical 13,Law Tac,NORCOM,2
-21232,52f,A,NC CC 1,"Police Car to Car 1 (Bellevue, Clyde Hill, Medina)",Law Talk,NORCOM,2
+21232,52f,A,NC CC 1,Police Car to Car 1 (Bellevue/Clyde Hill/Medina),Law Talk,NORCOM,2
 21264,531,A,BPD Train,Police - Training,Law Talk,Bellevue,2
 21296,533,A,NC Tac 12,Police Tactical 12,Law Tac,NORCOM,2
 21328,535,A,NC Tac 11,Police Tactical 11,Law Tac,NORCOM,1
 21360,537,A,NC Data,Police Data,Law Talk,NORCOM,2
-21392,539,A,NC Tac 1,"Police Tactical 1 (Bellevue, Clyde Hill, Medina)",Law Tac,NORCOM,2
-21424,53b,A,NC Pol 1,"Police Dispatch 1 (Bellevue, Clyde Hill, Medina)",Law Dispatch,NORCOM,2
+21392,539,A,NC Tac 1,Police Tactical 1 (Bellevue/Clyde Hill/Medina),Law Tac,NORCOM,2
+21424,53b,A,NC Pol 1,Police Dispatch 1 (Bellevue/Clyde Hill/Medina),Law Dispatch,NORCOM,2
 21616,547,A,EPSCA,Eastside Public Safety Communications Agency,Public Works,Eastside Public Safety Communications Agency,2
 21648,549,A,ESPW Maint,Maintenance Common,Public Works,Eastside,2
 21680,54b,A,KCFD Dist14A,Fire District 14 (Bellevue) Administration,Fire-Talk,King County Fire Districts,2
@@ -378,8 +378,8 @@
 35888,8c3,A,HarVew House,Housekeeping,Business,Harborview Hospital,2
 35920,8c5,A,HarVew Hmc4,HMC-4,Business,Harborview Hospital,2
 35952,8c7,A,HarVew Call,Calling,Business,Harborview Hospital,2
-36848,8ff,A,Alg PD Prim,"Alogona, Pacific, Black Diamond Police Primary",Law Dispatch,Valley Communications,2
-36880,901,A,Alg PD Tac,"Algona,Pacific, Black Diamond Police Tactical",Law Tac,Valley Communications,2
+36848,8ff,A,Alg PD Prim,Alogona/Pacific/Black Diamond Police Primary,Law Dispatch,Valley Communications,2
+36880,901,A,Alg PD Tac,Algona/Pacific/Black Diamond Police Tactical,Law Tac,Valley Communications,2
 36912,903,A,Alg PD Admin,Algona Police Administration,Law Talk,Algona-Pacific,2
 36944,905,A,Aubur PD Pri,Auburn Police Primary,Law Dispatch,Valley Communications,2
 36976,907,A,Aubur PD Tac,Auburn Police Tactical,Law Tac,Valley Communications,2
@@ -512,7 +512,7 @@
 62896,f5b,A,MARS,King County Mutual Aid Radio System,Interop,King County Emergency Operations,2
 62928,f5d,A,PSOPS N1,Public Safety Operations N1,Interop,King County Emergency Operations,2
 62960,f5f,A,PSOPS N2,Public Safety Operations N2,Interop,King County Emergency Operations,2
-62992,f61,A,PSOPS S1,Public Safety Operations S1,Interop,King County Emergency Operations,2
+62992,f61,A,PSOPS S1,Public Safety Operations S1,Interop,King County Emergency Operations,1
 63024,f63,A,PSOPS S2,Public Safety Operations S2,Interop,King County Emergency Operations,2
 63056,f65,A,KC LocGov N,Interop North Local Government,Interop,King County Emergency Operations,2
 63088,f67,A,KC LocGov S,Interop South Local Government,Interop,King County Emergency Operations,2
