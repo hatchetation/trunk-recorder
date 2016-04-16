@@ -25,10 +25,10 @@ std::vector<TrunkMessage> SmartnetParser::parse_message(std::string s) {
 	std::vector<TrunkMessage> messages;
 	TrunkMessage message;
 
-
 	message.message_type = UNKNOWN;
 	message.tdma = 0;
 	message.encrypted = false;
+	message.emergency = false;
 
 
 	std::vector<std::string> x;
