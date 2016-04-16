@@ -339,14 +339,10 @@ void retune_recorder(TrunkMessage message, Call *call) {
     } else {
          BOOST_LOG_TRIVIAL(info) << "\t  Can't continue call with this source, starting new call";
     
-        recorder->deactivate();
-        
-        call->set_recording(false);
-        
-        if (call->get_debug_recording() == true) {
-            call->get_debug_recorder()->deactivate();
-            call->set_debug_recording(false);
-        } 
+	// should this be calling Call.end_call() ? Think this may be responsible for dropped metadata
+        //recorder->deactivate();
+        //call->set_recording(false);
+	call->end_call();
         
         start_recorder(call);  
     }
