@@ -189,6 +189,7 @@ void analog_recorder::deactivate() {
 	valve->set_enabled(false);
 
 	wav_sink->close();
+	BOOST_LOG_TRIVIAL(info) << "\t  deactivate() called  " << freq - center;
 
 	ofstream myfile (status_filename);
 	if (myfile.is_open())
@@ -201,7 +202,9 @@ void analog_recorder::deactivate() {
 		myfile << "}\n";
 		myfile.close();
 	}
-	else cout << "Unable to open file";
+	else { 
+		BOOST_LOG_TRIVIAL(error) << "\t  deactivate() called, but file doesn't seem to be open to closed  " << freq - center;
+	}
 }
 
 void analog_recorder::activate(Call *call, int n) {
@@ -209,11 +212,12 @@ void analog_recorder::activate(Call *call, int n) {
 	starttime = time(NULL);
 
 	talkgroup = call->get_talkgroup();
+	BOOST_LOG_TRIVIAL(debug) << "\t  activate() called with TG: " << talkgroup;
 	freq = call->get_freq();
-    num = n;
+	num = n; //number of the recorder shot?
 
 	prefilter->set_center_freq( freq - center); // have to flip for 3.7
-	BOOST_LOG_TRIVIAL(info) << "\t  Tuning to " << freq - center;
+	BOOST_LOG_TRIVIAL(debug) << "\t  Tuning to " << freq - center;
 
 	wav_sink->open(call->get_filename());
 

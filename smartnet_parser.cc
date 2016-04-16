@@ -1,4 +1,5 @@
 #include "smartnet_parser.h"
+#include <boost/log/trivial.hpp>
 
 using namespace std;
 SmartnetParser::SmartnetParser() {
@@ -43,6 +44,7 @@ std::vector<TrunkMessage> SmartnetParser::parse_message(std::string s) {
 	vector<string>().swap(x);
 
 	if (command < 0x2d0) { //720
+		BOOST_LOG_TRIVIAL(debug) << "smartnet_parser: address " << address;
 		if (  (address != 56016) && (address != 8176)) {  // remove this later to make it more general
 			message.talkgroup = address;
 			message.freq = getfreq(command);

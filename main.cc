@@ -247,7 +247,7 @@ void start_recorder(Call *call) {
 
     BOOST_LOG_TRIVIAL(debug) << "\tstart_recorder called for: " << call->get_talkgroup() << "\tTDMA: " << call->get_tdma() <<  "\tEncrypted: " << call->get_encrypted();
     if (call->get_encrypted() == false) {
-        BOOST_LOG_TRIVIAL(error) << "\tCall created for TG: " << call->get_talkgroup() << "\tTDMA: " << call->get_tdma() <<  "\tEncrypted: " << call->get_encrypted();
+        BOOST_LOG_TRIVIAL(info) << "\tCall created for TG: " << call->get_talkgroup() << ", priority " << talkgroup->get_priority() << "\tTDMA: " << call->get_tdma() <<  "\tEncrypted: " << call->get_encrypted();
 
         for(vector<Source *>::iterator it = sources.begin(); it != sources.end(); it++) {
             Source * source = *it;
@@ -263,13 +263,13 @@ void start_recorder(Call *call) {
                 if (talkgroup)
                 {
                     if (talkgroup->mode == 'A') {
-			BOOST_LOG_TRIVIAL(info) << "\t  Setting up analog recorder for " << call->get_talkgroup() << ", priority " << talkgroup->get_priority();
+			BOOST_LOG_TRIVIAL(debug) << "\t  Setting up analog recorder for " << call->get_talkgroup() << ", priority " << talkgroup->get_priority();
                         recorder = source->get_analog_recorder(talkgroup->get_priority());
                     } else {
                         recorder = source->get_digital_recorder(talkgroup->get_priority());
                     }
                 } else {
-                    BOOST_LOG_TRIVIAL(error) << "\tTalkgroup not found: " << call->get_freq() << " For TG: " << call->get_talkgroup();
+                    BOOST_LOG_TRIVIAL(error) << "\t  Talkgroup not found: " << call->get_freq() << " For TG: " << call->get_talkgroup();
 
                     recorder = source->get_digital_recorder(2);
                 }
@@ -331,14 +331,13 @@ void retune_recorder(TrunkMessage message, Call *call) {
     call->set_freq(message.freq);
     call->set_tdma(message.tdma); 
 
-
     if ((source->get_min_hz() <= message.freq) && (source->get_max_hz() >= message.freq)) {
         recorder->tune_offset(message.freq);
         if (call->get_debug_recording() == true) {
             call->get_debug_recorder()->tune_offset(message.freq);
         }
     } else {
-         BOOST_LOG_TRIVIAL(info) << "\tSwitching to Different Source to Record";
+         BOOST_LOG_TRIVIAL(info) << "\t  Can't continue call with this source, starting new call";
     
         recorder->deactivate();
         
@@ -372,7 +371,7 @@ void assign_recorder(TrunkMessage message) {
                 BOOST_LOG_TRIVIAL(trace) << "\tRetune - Total calls: " << calls.size() << "\tTalkgroup: " << message.talkgroup << "\tOld Freq: " << call->get_freq() << "\tNew Freq: " << message.freq;
                 // are we currently recording the call?
                 if (call->get_recording() == true) {
-		    BOOST_LOG_TRIVIAL(info) << "\tUpdate call for: " << message.talkgroup << ", already recording.";
+		    BOOST_LOG_TRIVIAL(debug) << "\tUpdate call for: " << message.talkgroup << ", already recording.";
 
                     retune_recorder(message, call);
                     call->update(message);
@@ -405,7 +404,7 @@ void assign_recorder(TrunkMessage message) {
                 
                 // if you are recording the call, stop
                 if (call->get_recording() == true) {
-                    BOOST_LOG_TRIVIAL(info) << "\tFreq in use -  TG: " << message.talkgroup << "\tFreq: " << message.freq << "\tTDMA: " << message.tdma << "\t Ending Existing call\tTG: " << call->get_talkgroup() << "\tTMDA: " << call->get_tdma() << "\tElapsed: " << call->elapsed() << "s \tSince update: " << call->since_last_update();
+                    BOOST_LOG_TRIVIAL(error) << "\tFreq in use -  TG: " << message.talkgroup << "\tFreq: " << message.freq << "\tTDMA: " << message.tdma << "\t Ending Existing call\tTG: " << call->get_talkgroup() << "\tTMDA: " << call->get_tdma() << "\tElapsed: " << call->elapsed() << "s \tSince update: " << call->since_last_update();
                 //different talkgroups on the same freq, that is trouble
                 }
                 call->end_call();
